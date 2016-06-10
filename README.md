@@ -10,9 +10,6 @@
     http://wiki.bash-hackers.org/scripting/style
     https://google-styleguide.googlecode.com/svn/trunk/shell.xml
 
-## Example usage:
+## Example usage: Not tested against github api, only bitbucket.
 
-  git archive --remote=git@bitbucket.org:mindsignited/shellbox.git master replicate -o replicate.tar && tar -xf replicate.tar &&    bash ./replicate git:git@bitbucket.org:mindsignited/shellbox.git ; \
-     bash ./shellbox/java8.sh && \
-     bash ./shellbox/supervisord.sh && \
-     bash ./shellbox/installElasticsearch.sh ;
+  git archive --remote=git@github.org:mindsignited/shellbox.git master replicate -o replicate.tar && tar -xf replicate.tar && bash ./replicate git:git@github.org:mindsignited/shellbox.git && bash ./shellbox/java8.sh && bash ./shellbox/timezoneAndNtp.sh && bash ./shellbox/updateUlimit.sh && bash ./shellbox/installElasticsearch.sh ;
