@@ -11,7 +11,7 @@ cat <<USAGE
 USAGE: installGitlab.sh (presented with defaults)
                              (--version "8.5.4")?
                              (--gitDataDir "/var/opt/gitlab/git-data")?
-                             (--externalURL "http://ubuntu")?
+                             (--externalURL "http://ubuntu")? (use internal dns)
                              (--bitbucketOptions "false")?
                              (--bitbucketOAuthKey "")?
                              (--bitbucketOAuthSecret "")?
