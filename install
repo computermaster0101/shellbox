@@ -1,0 +1,21 @@
+#!/bin/bash
+
+DISTRO=$(distro)
+
+case $DISTRO in
+    ubuntu)
+        UPDATE="apt-get update -y"
+        ;;
+    *)
+        UPDATE=false
+        ;;
+esac
+
+case $DISTRO in
+    ubuntu)
+        INSTALL="apt-get install -y"
+        ;;
+    *)
+        INSTALL=false
+        ;;
+esac
