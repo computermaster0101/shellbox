@@ -23,7 +23,7 @@ function -h {
 cat <<USAGE
 USAGE: installKibana.sh (presented with defaults)
                              (--version "4.3.0")?
-                             (--serverPort "8081")?
+                             (--serverPort "8080")?
                              (--serverHost "0.0.0.0")?
                              (--esURL "http://localhost:9200")?
   Install and configure Kibana.
@@ -51,7 +51,7 @@ function validateopts {
         echo "** version not set, using default --> ${version}"
     fi
     if [ -z ${serverPort+x} ]; then
-        serverPort=8081
+        serverPort=8080
         echo "** serverPort not set, using default --> ${serverPort}"
     fi
     if [ -z ${serverHost+x} ]; then
