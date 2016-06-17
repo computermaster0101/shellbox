@@ -54,7 +54,7 @@ function validate {
         echo "** externalURL not set, using default --> ${externalURL}"
     fi
     # bitbucket options
-    if [ ${bitbucketOptions}+x} ]; then
+    if [ ${bitbucketOptions+x} ]; then
         bitbucketOptions="false"
         echo "** bitbucketRSA not set and will be generated automatically."
     fi
