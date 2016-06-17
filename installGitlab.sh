@@ -68,11 +68,11 @@ function validate {
     fi
     if [ ${bitbucketOptions} == true ] & [ -z ${bitbucketOAuthKey+x} ]; then
         echo "** bitbucketOAuthKey is not set but is required. Exiting now."
-        exit 1;
+        bitbucketOAuthKey=""
     fi
     if [ ${bitbucketOptions} == true ] & [ -z ${bitbucketOAuthSecret+x} ]; then
         echo "** bitbucketOAuthSecret is not set but is required. Exiting now."
-        exit 1;
+        bitbucketOAuthSecret=""
     fi
 }
 
