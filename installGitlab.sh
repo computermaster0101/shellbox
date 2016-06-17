@@ -29,7 +29,7 @@ function options {
       --version)                version="$2"             ; shift ;;
       --gitDataDir)             gitDataDir="$2"             ; shift ;;
       --externalURL)            externalURL="$2"             ; shift ;;
-      --bitbucketOptions)       bitbucketOptions="&2"           ; shift ;;
+      --bitbucketOptions)       bitbucketOptions="$2"           ; shift ;;
       --bitbucketRSA)           bitbucketRSA="$2"             ; shift ;;
       --bitbucketRSApub)        bitbucketRSApub="$2"             ; shift ;;
       --bitbucketOAuthKey)      bitbucketOAuthKey="$2"             ; shift ;;

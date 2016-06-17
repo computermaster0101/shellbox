@@ -22,6 +22,7 @@ USAGE: installLogstashTopbeat.sh (presented with defaults)
                              (--logstashServer "localhost")?
                              (--logstashPort 9210)?
                              (--tag "")?
+                             (--serverName "")?
 
   Install and configure Logstash Topbeat.
 
