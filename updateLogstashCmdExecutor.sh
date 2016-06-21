@@ -76,8 +76,6 @@ input {
     }
 }
 
-
-
 EOF
 
     tail -n +2 ${home}/cmdExecutor_server.conf.new
