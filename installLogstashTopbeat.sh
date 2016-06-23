@@ -97,7 +97,7 @@ cat <<'EOF' > ${home}/topbeat.yml
 ############################# Input ############################################
 input:
   # In seconds, defines how often to read server statistics
-  period: 10
+  period: 30
 
   # Regular expression to match the processes that are monitored
   # By default, all the processes are monitored
